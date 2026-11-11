@@ -1,24 +1,7 @@
-<img src="./console-hero.svg" width="880" alt="Kavin. I build web apps, explore data, and turn machine learning experiments into demos.">
+<img src="./arcade-kavin.svg" width="760" alt="Kavin — web apps, machine learning, and data">
 
-## Featured projects
+<a href="https://github.com/ran-nope/SoundSight"><img src="./arcade-sound.svg" width="48%" alt="SoundSight — audio classifier"></a> <a href="https://github.com/ran-nope/api-cinema"><img src="./arcade-http.svg" width="48%" alt="API Cinema — http playground"></a>
 
-<a href="https://github.com/ran-nope/SoundSight"><img src="./console-soundsight.svg" width="880" alt="SoundSight. Classify environmental sounds and inspect the prediction with a spectrogram. View source."></a>
-
-[Try the demo](https://soundsight-ran-nope.streamlit.app/)
-
-<a href="https://github.com/ran-nope/api-cinema"><img src="./console-api-cinema.svg" width="880" alt="API Cinema. Edit requests, inspect responses, and debug 15 guided challenges. View source."></a>
-
-[Try the demo](https://ran-nope.github.io/api-cinema/)
-
-<a href="https://github.com/ran-nope/internship-tracker"><img src="./console-internship-tracker.svg" width="880" alt="Internship Tracker. Organize internship applications, track statuses, and see progress over time. View source."></a>
-
-[Open app](https://internship-tracker-seven-alpha.vercel.app)
-
-<a href="https://github.com/ran-nope/DSV_PROJECT"><img src="./console-play-store.svg" width="880" alt="Google Play Store Analysis. Clean and explore 10,357 app records with Python, visualizations, and PCA. View source."></a>
-
-[Open notebook](https://colab.research.google.com/drive/1pPh43M59JUzmIp6kPgybzvLeL_mE0lCg)
-
-## Find me
+<a href="https://github.com/ran-nope/internship-tracker"><img src="./arcade-tracker.svg" width="48%" alt="Internship Tracker — full-stack app"></a> <a href="https://github.com/ran-nope/DSV_PROJECT"><img src="./arcade-data.svg" width="48%" alt="Play Store Analysis — data exploration"></a>
 
 [LinkedIn](https://www.linkedin.com/in/kavin-m-159511381/) · [GitHub activity](https://github.com/ran-nope#js-contribution-activity)
-

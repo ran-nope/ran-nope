@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="91" viewBox="0 0 365 91"><style>
+  .name{fill:#f7f5ff;font:800 62px 'Segoe UI',sans-serif;letter-spacing:-4px}
+  .title{fill:#f7f5ff;font:750 26px 'Segoe UI',sans-serif;letter-spacing:-.6px}
+  .mono{font:700 13px ui-monospace,Consolas,monospace;letter-spacing:1.4px}
+  .sub{fill:#bac2da;font:500 16px 'Segoe UI',sans-serif}
+  .wire{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round}
+  @keyframes hop{50%{transform:translateY(-8px)}}
+  @keyframes ping{0%,100%{opacity:.3}50%{opacity:1}}
+  @keyframes packet{0%{transform:translateX(0);opacity:0}25%,65%{opacity:1}100%{transform:translateX(47px);opacity:0}}
+  @keyframes level{50%{transform:scaleY(.42)}}
+  @media(prefers-reduced-motion:no-preference){
+    .hop{animation:hop 2.8s ease-in-out infinite}
+    .ping{animation:ping 2.2s ease-in-out infinite}
+    .packet{animation:packet 2.4s linear infinite}
+    .level{animation:level 1.3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  }
+</style><defs><pattern id="dot" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#7972ba" opacity=".23"/></pattern></defs><rect x=".5" y=".5" width="364" height="90" rx="14" fill="#111023" stroke="#413866"/>
+    <rect x="283" y="9" width="73" height="73" rx="10" fill="url(#dot)" stroke="#352d53"/>
+    <text x="14" y="30" class="mono" fill="#c8aeff">HTTP PLAYGROUND</text>
+    <text x="14" y="61" class="title">API Cinema</text>
+    <g transform="translate(296 20)" color="#c8aeff"><path class="wire" d="M0 14H48m-6-5 6 5-6 5M0 36H48M6 31l-6 5 6 5"/><circle class="packet" cy="14" r="4" fill="currentColor"/><g transform="translate(48 0) scale(-1 1)"><circle class="packet" cy="36" r="4" fill="currentColor" style="animation-delay:.9s"/></g></g>
+  </svg>
