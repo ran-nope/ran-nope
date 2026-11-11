@@ -2,19 +2,22 @@
   <title id="title">Google Play Store Analysis</title>
   <desc id="desc">Clean and explore 10,357 app records with Python, visualizations, and PCA.</desc>
   <style>
-    .paper{fill:#f6edd4;stroke:#e4d7b4}
-    .title{font:52px Georgia,serif;fill:#192a29}
-    .name{font:88px Georgia,serif;fill:#192a29}
-    .copy{font:25px system-ui,sans-serif;fill:#354844}
-    .label{font:700 19px system-ui,sans-serif;letter-spacing:2px;fill:#735619}
-    .detail{font:600 19px ui-monospace,monospace;fill:#735619}
-    .ink{fill:#735619}
-    .line{stroke:#735619;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .paper{fill:#221c14;stroke:#594a35}
+    .title{font:700 48px 'Segoe UI',system-ui,sans-serif;letter-spacing:-2px;fill:#eff8ff}
+    .name{font:800 106px 'Segoe UI',system-ui,sans-serif;letter-spacing:-7px;fill:#eff8ff}
+    .copy{font:25px system-ui,sans-serif;fill:#c1cedc}
+    .label{font:700 19px system-ui,sans-serif;letter-spacing:2px;fill:#ffdc99}
+    .detail{font:600 19px ui-monospace,monospace;fill:#ffdc99}
+    .ink{fill:#ffdc99}
+    .line{stroke:#ffdc99;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
     @keyframes arrive{from{opacity:.18;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
     @keyframes draw{from{stroke-dashoffset:300}to{stroke-dashoffset:0}}
     @keyframes sweep{from{transform:translateX(-168px)}to{transform:translateX(168px)}}
     @keyframes meter{0%,100%{transform:scaleY(.45)}45%{transform:scaleY(1)}}
     @keyframes signal{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes packet{0%,12%{opacity:0;transform:translateX(0)}22%{opacity:1}70%{opacity:1}88%,100%{opacity:0;transform:translateX(95px)}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes point{0%,100%{transform:translateY(12px);opacity:.42}50%{transform:translateY(0);opacity:1}}
     .scan{opacity:0}
     @media (prefers-reduced-motion:no-preference){
       .enter{animation:arrive .55s ease-out 350ms both}
@@ -22,8 +25,14 @@
       .scan{opacity:.7;animation:sweep 4s linear infinite}
       .meter{transform-box:fill-box;transform-origin:center;animation:meter 1.55s ease-in-out infinite}
       .signal{animation:signal 2.6s ease-in-out infinite}
+      .packet{animation:packet 3s linear infinite}
+      .orbit{animation:orbit 14s linear infinite}
+      .point{animation:point 3.2s ease-in-out infinite}
     }
   </style>
-  <rect class="paper" x=".5" y=".5" width="879" height="224" rx="22"/>
-  <g class="enter"><text x="38" y="42" class="label">EXPLORATORY DATA ANALYSIS</text><text x="36" y="97" class="title">Google Play Store Analysis</text><text x="38" y="139" class="copy">Clean and explore 10,357 app records</text><text x="38" y="172" class="copy">with Python, visualizations, and PCA.</text><text x="38" y="204" class="detail">Python · pandas · Colab</text><g transform="translate(709 64)"><path class="line" d="M12 14v72h106"/><path class="line trace" d="m25 75 79-58"/><g class="ink"><circle cx="33" cy="59" r="4"/><circle cx="47" cy="70" r="5"/><circle cx="57" cy="44" r="5"/><circle cx="74" cy="48" r="4"/><circle cx="93" cy="23" r="5"/><circle cx="108" cy="37" r="4"/></g></g><path class="line" d="M805 197h29m-10-10 10 10-10 10"/></g>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#94a3b8" stroke-opacity=".13" fill="none"/></pattern></defs>
+  <rect class="paper" x=".5" y=".5" width="879" height="224" rx="18"/>
+  <rect x="680" y="16" width="182" height="193" rx="12" fill="#050b15" stroke="#25364a"/>
+  <rect x="680" y="16" width="182" height="193" rx="12" fill="url(#grid)"/>
+  <g class="enter"><text x="38" y="42" class="label">EXPLORATORY DATA ANALYSIS</text><text x="36" y="97" class="title">Google Play Store Analysis</text><text x="38" y="139" class="copy">Clean and explore 10,357 app records</text><text x="38" y="172" class="copy">with Python, visualizations, and PCA.</text><text x="38" y="204" class="detail">Python · pandas · Colab</text><g transform="translate(709 64)"><path class="line" d="M12 14v72h106"/><path class="line trace" d="m25 75 79-58"/><g class="ink"><circle cx="33" cy="59" r="4"/><circle cx="47" cy="70" r="5"/><circle cx="57" cy="44" r="5"/><circle cx="74" cy="48" r="4"/><circle cx="93" cy="23" r="5"/><circle cx="108" cy="37" r="4"/></g></g><path class="line" d="M805 192h29m-10-10 10 10-10 10"/></g>
 </svg>

@@ -2,19 +2,22 @@
   <title id="title">API Cinema</title>
   <desc id="desc">Edit requests, inspect responses, and debug 15 guided challenges.</desc>
   <style>
-    .paper{fill:#e8ecf8;stroke:#ced7ef}
-    .title{font:52px Georgia,serif;fill:#192a29}
-    .name{font:88px Georgia,serif;fill:#192a29}
-    .copy{font:25px system-ui,sans-serif;fill:#354844}
-    .label{font:700 19px system-ui,sans-serif;letter-spacing:2px;fill:#3c4f89}
-    .detail{font:600 19px ui-monospace,monospace;fill:#3c4f89}
-    .ink{fill:#3c4f89}
-    .line{stroke:#3c4f89;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .paper{fill:#10172c;stroke:#38456e}
+    .title{font:700 48px 'Segoe UI',system-ui,sans-serif;letter-spacing:-2px;fill:#eff8ff}
+    .name{font:800 106px 'Segoe UI',system-ui,sans-serif;letter-spacing:-7px;fill:#eff8ff}
+    .copy{font:25px system-ui,sans-serif;fill:#c1cedc}
+    .label{font:700 19px system-ui,sans-serif;letter-spacing:2px;fill:#b7c4ff}
+    .detail{font:600 19px ui-monospace,monospace;fill:#b7c4ff}
+    .ink{fill:#b7c4ff}
+    .line{stroke:#b7c4ff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
     @keyframes arrive{from{opacity:.18;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
     @keyframes draw{from{stroke-dashoffset:300}to{stroke-dashoffset:0}}
     @keyframes sweep{from{transform:translateX(-168px)}to{transform:translateX(168px)}}
     @keyframes meter{0%,100%{transform:scaleY(.45)}45%{transform:scaleY(1)}}
     @keyframes signal{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes packet{0%,12%{opacity:0;transform:translateX(0)}22%{opacity:1}70%{opacity:1}88%,100%{opacity:0;transform:translateX(95px)}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes point{0%,100%{transform:translateY(12px);opacity:.42}50%{transform:translateY(0);opacity:1}}
     .scan{opacity:0}
     @media (prefers-reduced-motion:no-preference){
       .enter{animation:arrive .55s ease-out 170ms both}
@@ -22,8 +25,14 @@
       .scan{opacity:.7;animation:sweep 4s linear infinite}
       .meter{transform-box:fill-box;transform-origin:center;animation:meter 1.55s ease-in-out infinite}
       .signal{animation:signal 2.6s ease-in-out infinite}
+      .packet{animation:packet 3s linear infinite}
+      .orbit{animation:orbit 14s linear infinite}
+      .point{animation:point 3.2s ease-in-out infinite}
     }
   </style>
-  <rect class="paper" x=".5" y=".5" width="879" height="224" rx="22"/>
-  <g class="enter"><text x="38" y="42" class="label">INTERACTIVE HTTP PLAYGROUND</text><text x="36" y="97" class="title">API Cinema</text><text x="38" y="139" class="copy">Edit requests, inspect responses,</text><text x="38" y="172" class="copy">and debug 15 guided challenges.</text><text x="38" y="204" class="detail">JavaScript · Service worker</text><g transform="translate(709 64)"><rect x="7" y="13" width="113" height="76" rx="12" class="line"/><path class="line trace" d="m30 40 12 11-12 11"/><path class="line signal" d="M54 65h22"/></g><path class="line" d="M805 197h29m-10-10 10 10-10 10"/></g>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#94a3b8" stroke-opacity=".13" fill="none"/></pattern></defs>
+  <rect class="paper" x=".5" y=".5" width="879" height="224" rx="18"/>
+  <rect x="680" y="16" width="182" height="193" rx="12" fill="#050b15" stroke="#25364a"/>
+  <rect x="680" y="16" width="182" height="193" rx="12" fill="url(#grid)"/>
+  <g class="enter"><text x="38" y="42" class="label">INTERACTIVE HTTP PLAYGROUND</text><text x="36" y="97" class="title">API Cinema</text><text x="38" y="139" class="copy">Edit requests, inspect responses,</text><text x="38" y="172" class="copy">and debug 15 guided challenges.</text><text x="38" y="204" class="detail">JavaScript · Service worker</text><g transform="translate(709 64)"><path class="line" d="M15 35H110M15 66H110"/><path class="line" d="m102 27 8 8-8 8m-79 15-8 8 8 8"/><circle class="ink packet" cx="15" cy="35" r="6"/><g transform="translate(125 0) scale(-1 1)"><circle class="ink packet" cx="15" cy="66" r="6" style="animation-delay:1.2s"/></g></g><path class="line" d="M805 192h29m-10-10 10 10-10 10"/></g>
 </svg>
