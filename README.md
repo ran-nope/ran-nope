@@ -4,4 +4,8 @@
 
 <a href="https://github.com/ran-nope/internship-tracker"><img src="./arcade-tracker.svg" width="48%" alt="Internship Tracker — full-stack app"></a> <a href="https://github.com/ran-nope/DSV_PROJECT"><img src="./arcade-data.svg" width="48%" alt="Play Store Analysis — data exploration"></a>
 
+<a href="https://github.com/ran-nope/grade-lab"><img src="./arcade-grade-lab.svg" width="48%" alt="Grade Lab — model evaluation"></a>
+
+Grade Lab compares a simple grade baseline with trained models and shows where the baseline misses. [Live Streamlit demo](https://grade-lab-ran-nope.streamlit.app/)
+
 [LinkedIn](https://www.linkedin.com/in/kavin-m-159511381/) · [GitHub activity](https://github.com/ran-nope#js-contribution-activity)

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="91" viewBox="0 0 365 91" role="img" aria-labelledby="title">
+  <title id="title">Grade Lab — model evaluation</title>
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#7972ba" opacity=".23"/>
+    </pattern>
+  </defs>
+  <rect x=".5" y=".5" width="364" height="90" rx="14" fill="#111023" stroke="#413866"/>
+  <rect x="283" y="9" width="73" height="73" rx="10" fill="url(#dots)" stroke="#352d53"/>
+  <text x="14" y="30" fill="#a5b6ff" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="1.4">MODEL EVALUATION</text>
+  <text x="14" y="61" fill="#f7f5ff" font-family="Segoe UI,sans-serif" font-size="26" font-weight="750">Grade Lab</text>
+  <path d="M295 22v48h49" fill="none" stroke="#6e638c" stroke-width="1.5"/>
+  <path d="M296 69l47-46" fill="none" stroke="#a5b6ff" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <g fill="#a5b6ff">
+    <circle cx="306" cy="57" r="2.5"/><circle cx="316" cy="51" r="2.5"/>
+    <circle cx="321" cy="43" r="2.5"/><circle cx="331" cy="35" r="2.5"/>
+    <circle cx="339" cy="28" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#ffb267" stroke-width="1.8">
+    <circle cx="298" cy="45" r="3.2"/><circle cx="298" cy="54" r="3.2"/>
+  </g>
+</svg>
