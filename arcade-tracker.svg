@@ -1,22 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="365" height="91" viewBox="0 0 365 91"><style>
-  .name{fill:#f7f5ff;font:800 62px 'Segoe UI',sans-serif;letter-spacing:-4px}
-  .title{fill:#f7f5ff;font:750 26px 'Segoe UI',sans-serif;letter-spacing:-.6px}
-  .mono{font:700 13px ui-monospace,Consolas,monospace;letter-spacing:1.4px}
-  .sub{fill:#bac2da;font:500 16px 'Segoe UI',sans-serif}
-  .wire{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round}
-  @keyframes hop{50%{transform:translateY(-8px)}}
-  @keyframes ping{0%,100%{opacity:.3}50%{opacity:1}}
-  @keyframes packet{0%{transform:translateX(0);opacity:0}25%,65%{opacity:1}100%{transform:translateX(47px);opacity:0}}
-  @keyframes level{50%{transform:scaleY(.42)}}
-  @media(prefers-reduced-motion:no-preference){
-    .hop{animation:hop 2.8s ease-in-out infinite}
-    .ping{animation:ping 2.2s ease-in-out infinite}
-    .packet{animation:packet 2.4s linear infinite}
-    .level{animation:level 1.3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-  }
-</style><defs><pattern id="dot" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#7972ba" opacity=".23"/></pattern></defs><rect x=".5" y=".5" width="364" height="90" rx="14" fill="#111023" stroke="#413866"/>
-    <rect x="283" y="9" width="73" height="73" rx="10" fill="url(#dot)" stroke="#352d53"/>
-    <text x="14" y="30" class="mono" fill="#ff9edb">FULL-STACK APP</text>
-    <text x="14" y="61" class="title">Internship Tracker</text>
-    <g transform="translate(296 20)" color="#ff9edb"><path class="wire" d="M1 6v38h49M6 35l11-9 11 5 16-18"/><circle class="ping" cx="44" cy="13" r="5" fill="currentColor"/></g>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="91" viewBox="0 0 365 91" role="img" aria-labelledby="title description">
+  <title id="title">Internship Tracker — full-stack app</title>
+  <desc id="description">A glowing data point moves along a chart to represent application progress.</desc>
+  <style>
+    .trail { animation: trail 4.5s ease-in-out infinite; }
+    @keyframes trail { 0%, 100% { opacity: 0; } 16%, 82% { opacity: 1; } }
+    .still { display: none; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .motion { display: none; }
+      .still { display: inline; }
+    }
+  </style>
+  <rect x=".5" y=".5" width="364" height="90" rx="14" fill="#0D1117" stroke="#30363D"/>
+  <rect x="282.5" y="9.5" width="73" height="72" rx="10" fill="#111827" stroke="#30363D"/>
+  <text x="15" y="30" fill="#F9A8D4" font-family="ui-monospace, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="1.4">FULL-STACK APP</text>
+  <text x="15" y="62" fill="#F0F6FC" font-family="Segoe UI, sans-serif" font-size="26" font-weight="750">Internship Tracker</text>
+  <g transform="translate(294 20)" color="#F9A8D4">
+    <path d="M4 7v38h47" fill="none" stroke="#64748B" stroke-width="1.3"/>
+    <path d="M8 37 19 27 29 31 47 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="motion trail" fill="currentColor">
+      <circle r="5" opacity=".26"/><circle r="2.6"/>
+      <animateMotion path="M8 37 19 27 29 31 47 12" dur="4.5s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines=".42 0 .58 1"/>
+    </g>
+    <circle class="still" cx="47" cy="12" r="2.6" fill="currentColor"/>
+  </g>
+</svg>

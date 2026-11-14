@@ -1,33 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="141" viewBox="0 0 760 141"><style>
-  .name{fill:#f7f5ff;font:800 62px 'Segoe UI',sans-serif;letter-spacing:-4px}
-  .title{fill:#f7f5ff;font:750 26px 'Segoe UI',sans-serif;letter-spacing:-.6px}
-  .mono{font:700 13px ui-monospace,Consolas,monospace;letter-spacing:1.4px}
-  .sub{fill:#bac2da;font:500 16px 'Segoe UI',sans-serif}
-  .wire{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round}
-  @keyframes hop{50%{transform:translateY(-8px)}}
-  @keyframes ping{0%,100%{opacity:.3}50%{opacity:1}}
-  @keyframes packet{0%{transform:translateX(0);opacity:0}25%,65%{opacity:1}100%{transform:translateX(47px);opacity:0}}
-  @keyframes level{50%{transform:scaleY(.42)}}
-  @media(prefers-reduced-motion:no-preference){
-    .hop{animation:hop 2.8s ease-in-out infinite}
-    .ping{animation:ping 2.2s ease-in-out infinite}
-    .packet{animation:packet 2.4s linear infinite}
-    .level{animation:level 1.3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-  }
-</style><defs><pattern id="dot" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#7972ba" opacity=".23"/></pattern></defs><rect x=".5" y=".5" width="759" height="140" rx="14" fill="#111023" stroke="#413866"/>
-  <path d="M411 1H746Q759 1 759 14V127Q759 140 746 140H411Z" fill="url(#dot)"/>
-  <path d="M505 1 407 140M527 1 429 140" stroke="#3b315c" stroke-width="2"/>
-  <text x="25" y="29" class="mono" fill="#caff6e">@RAN-NOPE</text>
-  <text x="22" y="87" class="name">Kavin</text>
-  <text x="26" y="117" class="sub">Web apps, machine learning, and data.</text>
-  <g transform="translate(612 69)">
-    <ellipse rx="89" ry="39" fill="none" stroke="#625097" stroke-dasharray="3 6" transform="rotate(-15)"/>
-    <path d="M-81 23h21m-14-7h7m112 26h11m8-17h15" stroke="#a780ff" stroke-width="2"/>
-    <g class="hop">
-      <path d="M-20-34h30v8h12v12h10V3h-9v14H10v9H-8v-9h-14V4h-11v-18h13Z" fill="#a780ff"/>
-      <path d="M-18-22h30v8h9V2h-9v7h-31V2h-8v-16h9Z" fill="#211a3b"/>
-      <path d="M-14-10h7v9h-7zm17 0h7v9H3z" fill="#caff6e"/>
-      <path class="ping" d="M-8 28H9v8H5v7H0v7h-4V39h-4Z" fill="#ff8dda"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="156" viewBox="0 0 760 156" role="img" aria-labelledby="title description">
+  <title id="title">Kavin — web apps, machine learning, and data</title>
+  <desc id="description">A hovering pixel robot beside an Open to Internships status badge.</desc>
+  <style>
+    .mono { font: 700 13px ui-monospace, Consolas, monospace; letter-spacing: 1.3px; }
+    .name { font: 800 61px "Segoe UI", sans-serif; letter-spacing: -3px; }
+    .sub { font: 500 17px "Segoe UI", sans-serif; }
+    .bot { animation: hover 3.5s ease-in-out infinite; }
+    .eyes { animation: blink 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .beacon { animation: glow 3.5s ease-in-out infinite; }
+    .ripple { animation: ripple 3.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .grid { animation: grid 5s ease-in-out infinite; }
+    .cursor { animation: cursor 3.7s ease-in-out infinite; }
+    @keyframes hover { 50% { transform: translateY(-4px); } }
+    @keyframes blink { 0%, 88%, 94%, 100% { transform: scaleY(1); } 91% { transform: scaleY(.12); } }
+    @keyframes glow { 50% { opacity: .68; } }
+    @keyframes ripple { from { transform: scale(.85); opacity: .42; } to { transform: scale(1.55); opacity: 0; } }
+    @keyframes grid { 50% { opacity: .12; } }
+    @keyframes cursor { 44%, 100% { opacity: .9; } 65%, 83% { opacity: .18; } }
+    .still { display: none; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .motion { display: none; }
+      .still { display: inline; }
+    }
+  </style>
+  <defs>
+    <pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#A5B4FC"/>
+    </pattern>
+  </defs>
+  <rect x=".5" y=".5" width="759" height="155" rx="14" fill="#0D1117" stroke="#30363D"/>
+  <path class="grid" d="M473 1H746Q759 1 759 14V142Q759 155 746 155H402Z" fill="url(#grid)" opacity=".06"/>
+  <path d="M473 1 402 155M496 1 425 155" stroke="#30363D" fill="none"/>
+  <text x="26" y="31" fill="#A5B4FC" class="mono">@RAN-NOPE<tspan class="cursor" dx="3">_</tspan></text>
+  <text x="23" y="91" fill="#F0F6FC" class="name">Kavin</text>
+  <text x="26" y="121" fill="#C9D1D9" class="sub">Web apps, machine learning, and data.</text>
+  <g transform="translate(613 65)">
+    <ellipse rx="77" ry="32" transform="rotate(-14)" fill="none" stroke="#475376" stroke-dasharray="3 6"/>
+    <path d="M-72 18h18m104-33h16M-56-22h14m83 42h22" fill="none" stroke="#596588" stroke-width="1.5"/>
+    <g class="bot">
+      <path d="M-20-34h30v8h12v12h10V3h-9v14H10v9H-8v-9h-14V4h-11v-18h13Z" fill="#A5B4FC"/>
+      <path d="M-18-22h30v8h9V2h-9v7h-31V2h-8v-16h9Z" fill="#111827"/>
+      <path class="eyes" d="M-14-10h7v9h-7zm17 0h7v9H3z" fill="#6EE7B7"/>
+      <path d="M-8 29H8v4H5v5H-5v-5h-3Z" fill="#A5B4FC" opacity=".55"/>
     </g>
-    <path class="ping" d="M-76-27v14m-7-7h14M63-38v14m-7-7h14" stroke="#caff6e" stroke-width="2"/>
-  </g></svg>
+  </g>
+  <rect x="506" y="116" width="214" height="26" rx="13" fill="#111827" stroke="#30363D"/>
+  <circle class="ripple" cx="524" cy="129" r="5.5" fill="none" stroke="#34D399" opacity=".38"/>
+  <circle class="beacon" cx="524" cy="129" r="3.5" fill="#34D399"/>
+  <text x="541" y="133" fill="#D1FAE5" class="mono" style="font-size:11px">OPEN TO INTERNSHIPS</text>
+</svg>

@@ -1,7 +1,9 @@
-<img src="./arcade-kavin.svg" width="760" alt="Kavin — web apps, machine learning, and data">
+<img src="./arcade-kavin.svg" width="760" alt="Kavin — web apps, machine learning, and data. Open to internships.">
 
 I am an AI & Data Science undergraduate at Kumaraguru College of Technology building applied ML evaluation tools and full-stack web apps.
 My core stack is Python, scikit-learn, FastAPI, React, PostgreSQL, and Streamlit; I am seeking ML/Data Science and full-stack engineering internships.
+
+<img src="./arcade-stack.svg" width="760" alt="Technology stack: Python, scikit-learn, FastAPI, React, PostgreSQL, and Streamlit">
 
 <a href="https://github.com/ran-nope/grade-lab"><img src="./arcade-grade-lab.svg" width="48%" alt="Grade Lab — model evaluation"></a> <a href="https://github.com/ran-nope/SoundSight"><img src="./arcade-sound.svg" width="48%" alt="SoundSight — audio classifier"></a>
 
