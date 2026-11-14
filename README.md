@@ -1,8 +1,5 @@
 <img src="./arcade-kavin.svg" width="760" alt="Kavin (@ran-nope) — applied ML and full-stack engineering, with an animated pixel robot">
 
-I am an AI & Data Science undergraduate at Kumaraguru College of Technology building applied ML evaluation tools and full-stack web apps.
-My core stack is Python, scikit-learn, FastAPI, React, PostgreSQL, and Streamlit; I am seeking ML/Data Science and full-stack engineering internships.
-
 <img src="./arcade-stack.svg" width="760" alt="Technology stack: Python, scikit-learn, FastAPI, React, PostgreSQL, and Streamlit">
 
 ## Selected work
